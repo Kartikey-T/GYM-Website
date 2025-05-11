@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 20%;
+    /* border: 3px solid white; */
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    height: 12vh;
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover {
+    color: #28a745;
+}
+
+.rightNav {
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#joinNowBtn {
+    border: none;
+    border-radius: 5px;
+}
+
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url("img/background.jpeg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf {
+    width: 30%;
+}
+
+.secondHalf img {
+    width: 150%;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+    font-size: 41px;
+}
+
+.text-small {
+    font-size: 18px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+.section-left {
+    flex-direction: row-reverse;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.features-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.features-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.feature-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.blog-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    font-size: 20px;
+    margin: 16px;
+}
+
+.blog-card p {
+    margin: 0 16px;
+    font-size: 14px;
+    color: #555;
+}
+
+.read-more-btn {
+    display: block;
+    width: calc(100% - 32px);
+    margin: 16px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+
+.read-more-btn:hover {
+    background-color: #218838;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 600px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+.about-team {
+    text-align: center;
+}
+
+.about-team h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 250px;
+    height: 250px;
+    border-radius: 150%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Contact Section */
+#location {
+    padding: 0px;
+}
+
+#map {
+    /* height: 300px; */
+    width: 100%;
+}
+
+#contact {
+    
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#response-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #222;
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Styling for Social Links */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        height: 430px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .rightNav {
+        text-align: center;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+    .background{
+        display: flex;
+        justify-content: center;
+    }
+    .h-nav-resp {
+        height: 72px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+    .logo{
+        width: 300px;
+        top: 0%;
+        margin-top: 10%;
+    }
+    .section {
+        flex-direction: column-reverse;
+    }
+    .secondHalf{
+        display: flex;
+        justify-content: center;
+    }
+    .text-small {
+        text-align: center;
+    }
+
+    .text-big {
+        text-align: center;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .paras {
+        padding: 0px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .feature-card {
+        width: 100%;
+        /* Full width on mobile */
+    }
+
+    .blog-card {
+        width: 100%;
+        /* Full width on mobile */
+    }
+
+    .team-member {
+        width: 100%;
+        /* Full width on mobile */
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    /* Adjustments for smaller screens */
+    .owner-content {
+        flex-direction: column;
+    }
+}
+
+/* 
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .join-now button {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+} */

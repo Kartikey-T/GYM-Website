@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitlife GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <div class="logo">
+            <img src="img/logo.jpeg" alt="logo">
+        </div>
+        <ul class="nav-list v-class-resp">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <button id="joinNowBtn">Join Now</button>
+        </div>
+        <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstsection" id="home">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">FIT LIFE GYM</p>
+                <p class="text-small">Your journey to a healthier, stronger you starts here. Step into a healthier you!
+                    Our gym offers the best equipment, dynamic classes, and a welcoming vibe. Join us and let’s make
+                    your fitness dreams a reality!
+                </p>
+                <div class="buttons">
+                    <button class="cta-button">Join Now</button>
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="img/gympic1.jpg" alt="Book image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>What We Offer</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fas fa-dumbbell"></i>
+                <h4>State-of-the-Art Equipment</h4>
+                <p>We offer the latest in fitness equipment for cardio, strength training, and flexibility.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-friends"></i>
+                <h4>Personal Training</h4>
+                <p>Our certified trainers are here to guide and motivate you every step of the way.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-apple-alt"></i>
+                <h4>Nutrition Support</h4>
+                <p>Get personalized meal plans and nutrition advice to support your fitness goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+        <h2>Our Blog</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="img/blog1.jpg" alt="Blog Post 1">
+                <h3>Fitness Tips for Beginners</h3>
+                <p>Starting your fitness journey? Here are essential tips to make your workout effective and
+                    enjoyable...</p>
+                <button class="read-more-btn" onclick="showBlogDetails(1)">Read More</button>
+            </div>
+            <div class="blog-card">
+                <img src="img/blog2.jfif" alt="Blog Post 2">
+                <h3>Healthy Eating on a Budget</h3>
+                <p>Discover ways to eat healthy without breaking the bank! From meal prepping to smart shopping...</p>
+                <button class="read-more-btn" onclick="showBlogDetails(2)">Read More</button>
+            </div>
+            <div class="blog-card">
+                <img src="img/blog3.jpg" alt="Blog Post 3">
+                <h3>Top 5 Cardio Workouts</h3>
+                <p>Looking to boost your cardiovascular health? Here are the best workouts to try at the gym or at
+                    home...</p>
+                <button class="read-more-btn" onclick="showBlogDetails(3)">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Welcome to our Fitlife Gym! We're dedicated to helping people of all fitness levels reach their
+                    goals. Our
+                    expert trainers, state-of-the-art equipment, and welcoming community make us the perfect place for
+                    anyone looking to get fit.</p>
+                <p>Our philosophy centers around holistic health, focusing on fitness, nutrition, and mental well-being.
+                    Our gym offers a variety of programs
+                    tailored to your needs.</p>
+            </div>
+            <div class="about-team">
+                <h3>Meet Our Trainer</h3>
+                <div class="team-member">
+                    <img src="img/Trainer.jpeg" alt="Trainer Prashant Beniwal">
+                    <h4>Prashant Beniwal</h4>
+                    <p>15+ Years Experience</p>
+                </div>
+                <!-- <div class="team-member">
+                    <img src="trainer2.jpg" alt="Trainer Jane Smith">
+                    <h4>Jane Smith</h4>
+                    <p>Yoga & Flexibility Expert</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location">
+        <h2>Our Location</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21387.877896735758!2d77.70291754780565!3d29.464926931161493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c1b00335845df%3A0xf3f1af152a02027!2sFITLIFE_GYM%20KUKRA!5e0!3m2!1sen!2sin!4v1730110173539!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" onsubmit="return handleSubmit(event);">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="response-message"></div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/kChyxKJNctp7YLVa/?mibextid=LQQJ4d" target="_blank"
+                class="social-icon" aria-label="Facebook">
+                <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/fitlife.gym_kukra?igsh=ZG1mNjE2bmFscnpj&utm_source=qr" target="_blank"
+                class="social-icon" aria-label="Instagram">
+                <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
+                <img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube">
+                <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube">
+            </a>
+        </div>
+        <p>Copyright &copy; <span id="year"></span> www.Fitlifegym.com - All rights reserved.</p>
+
+    </footer>
+
+    <!-- Link to JavaScript Files -->
+    <script src="js/resp.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
